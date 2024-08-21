@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b3917e;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.main-header .logo {
+    font-weight: bold;
+}
+
+header.main-header .phone a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header.main-header .phone a:hover {
+    text-decoration: underline;
+}
+
+.scrolling-header {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.service-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-details {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-details:hover {
+    transform: translateY(-10px);
+}
+
+.service-image {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 300px; /* Ensure all images have the same height */
+    object-fit: cover; /* Ensure the image fits within the container */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Section Background Colors */
+.tiktok { background-color: #e0dff6; }
+.instagram { background-color: #e1f7f9; }
+.youtube { background-color: #f9f5e4; }
+.facebook { background-color: #f9e4e4; }
+
+.contact-section {
+    padding: 30px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-header {
+        font-size: 20px;
+    }
+
+    .service-grid {
+        flex-direction: column;
+    }
+
+    .service-details, .service-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header.main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header.main-header .phone {
+        margin-top: 10px;
+    }
+
+    .service-section h1 {
+        font-size: 28px;
+    }
+
+    .service-details {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrolling-header {
+        font-size: 14px;
+    }
+
+    .service-section h1 {
+        font-size: 24px;
+    }
+
+    .service-details {
+        font-size: 14px;
+    }
+}
